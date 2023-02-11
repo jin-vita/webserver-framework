@@ -1,0 +1,192 @@
+2023-02-11 14:45:16.603 - INFO: [logger.js:246:9] service loader called.
+2023-02-11 14:45:16.618 - INFO: [logger.js:246:9] controller loader called.
+2023-02-11 14:45:16.618 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-11 14:45:16.619 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-11 14:45:16.802 - INFO: [logger.js:246:9] Http Server started.
+2023-02-11 14:45:16.803 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-11 14:45:16.803 - INFO: [logger.js:246:9] Namespace -> ::_8001_4680
+2023-02-11 14:45:16.806 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-11 14:46:37.123 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:46:37.124 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:46:37.125 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-11 14:46:48.737 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:46:48.739 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:46:48.740 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-11 14:47:47.764 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:47:47.764 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:47:47.765 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-11 14:47:56.588 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:47:56.588 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:47:56.589 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-11 14:48:24.165 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:48:24.166 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:48:24.167 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10"}
+2023-02-11 14:48:39.485 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:48:39.485 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:48:39.486 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"id","searchValue":"2"}
+2023-02-11 14:49:14.844 - INFO: [logger.js:246:9] service loader called.
+2023-02-11 14:49:14.866 - INFO: [logger.js:246:9] controller loader called.
+2023-02-11 14:49:14.867 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-11 14:49:14.869 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-11 14:49:15.075 - INFO: [logger.js:246:9] Http Server started.
+2023-02-11 14:49:15.076 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-11 14:49:15.077 - INFO: [logger.js:246:9] Namespace -> ::_8001_12480
+2023-02-11 14:49:15.080 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-11 14:49:17.597 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:49:17.598 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:49:17.599 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"id","searchValue":"2"}
+2023-02-11 14:49:17.601 - DEBUG: [logger.js:246:9] searchStatement -> id = '2'
+2023-02-11 14:49:17.645 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where id = '2'
+2023-02-11 14:49:17.647 - DEBUG: [logger.js:246:9] searchStatement -> id = '2'
+2023-02-11 14:49:17.651 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where id = '2' limit 0, 10
+2023-02-11 14:49:38.672 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:49:38.673 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:49:38.673 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"홍길동"}
+2023-02-11 14:49:38.674 - DEBUG: [logger.js:246:9] searchStatement -> name = '홍길동' and age = 'undefined'
+2023-02-11 14:49:38.679 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name = '홍길동' and age = 'undefined'
+2023-02-11 14:49:38.680 - DEBUG: [logger.js:246:9] searchStatement -> name = '홍길동' and age = 'undefined'
+2023-02-11 14:49:38.682 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name = '홍길동' and age = 'undefined' limit 0, 10
+2023-02-11 14:50:11.859 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:50:11.859 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:50:11.860 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"홍길동,"}
+2023-02-11 14:50:11.861 - DEBUG: [logger.js:246:9] searchStatement -> name = '홍길동' and age = ''
+2023-02-11 14:50:11.863 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name = '홍길동' and age = ''
+2023-02-11 14:50:11.864 - DEBUG: [logger.js:246:9] searchStatement -> name = '홍길동' and age = ''
+2023-02-11 14:50:11.865 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name = '홍길동' and age = '' limit 0, 10
+2023-02-11 14:50:15.098 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:50:15.099 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:50:15.100 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"홍길동,21"}
+2023-02-11 14:50:15.101 - DEBUG: [logger.js:246:9] searchStatement -> name = '홍길동' and age = '21'
+2023-02-11 14:50:15.102 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name = '홍길동' and age = '21'
+2023-02-11 14:50:15.104 - DEBUG: [logger.js:246:9] searchStatement -> name = '홍길동' and age = '21'
+2023-02-11 14:50:15.105 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name = '홍길동' and age = '21' limit 0, 10
+2023-02-11 14:50:32.381 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:50:32.382 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:50:32.383 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"홍길동,21","searchJoin":"or"}
+2023-02-11 14:50:32.384 - DEBUG: [logger.js:246:9] searchStatement -> name = '홍길동' or age = '21'
+2023-02-11 14:50:32.387 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name = '홍길동' or age = '21'
+2023-02-11 14:50:32.388 - DEBUG: [logger.js:246:9] searchStatement -> name = '홍길동' or age = '21'
+2023-02-11 14:50:32.390 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name = '홍길동' or age = '21' limit 0, 10
+2023-02-11 14:50:53.112 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:50:53.113 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:50:53.113 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"홍길","searchJoin":"or","searchLike":"true"}
+2023-02-11 14:50:53.114 - DEBUG: [logger.js:246:9] searchStatement -> name like '%홍길%' or age like '%undefined%'
+2023-02-11 14:50:53.118 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name like '%홍길%' or age like '%undefined%'
+2023-02-11 14:50:53.119 - DEBUG: [logger.js:246:9] searchStatement -> name like '%홍길%' or age like '%undefined%'
+2023-02-11 14:50:53.121 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name like '%홍길%' or age like '%undefined%' limit 0, 10
+2023-02-11 14:51:09.282 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:51:09.282 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:51:09.283 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"2","searchJoin":"or","searchLike":"true"}
+2023-02-11 14:51:09.284 - DEBUG: [logger.js:246:9] searchStatement -> name like '%2%' or age like '%undefined%'
+2023-02-11 14:51:09.285 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name like '%2%' or age like '%undefined%'
+2023-02-11 14:51:09.287 - DEBUG: [logger.js:246:9] searchStatement -> name like '%2%' or age like '%undefined%'
+2023-02-11 14:51:09.289 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name like '%2%' or age like '%undefined%' limit 0, 10
+2023-02-11 14:51:18.345 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:51:18.347 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:51:18.348 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"21","searchJoin":"or","searchLike":"true"}
+2023-02-11 14:51:18.349 - DEBUG: [logger.js:246:9] searchStatement -> name like '%21%' or age like '%undefined%'
+2023-02-11 14:51:18.352 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name like '%21%' or age like '%undefined%'
+2023-02-11 14:51:18.353 - DEBUG: [logger.js:246:9] searchStatement -> name like '%21%' or age like '%undefined%'
+2023-02-11 14:51:18.356 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name like '%21%' or age like '%undefined%' limit 0, 10
+2023-02-11 14:51:37.697 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:51:37.698 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:51:37.699 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"21","searchJoin":"or","searchLike":"true","order":"name","orderDirection":"DESC"}
+2023-02-11 14:51:37.700 - DEBUG: [logger.js:246:9] searchStatement -> name like '%21%' or age like '%undefined%'
+2023-02-11 14:51:37.702 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name like '%21%' or age like '%undefined%'
+2023-02-11 14:51:37.703 - DEBUG: [logger.js:246:9] searchStatement -> name like '%21%' or age like '%undefined%'
+2023-02-11 14:51:37.707 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name like '%21%' or age like '%undefined%' order by name DESC limit 0, 10
+2023-02-11 14:51:59.216 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:51:59.217 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:51:59.218 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"21","searchJoin":"or","searchLike":"true","order":"name","orderDirection":"DESC"}
+2023-02-11 14:51:59.218 - DEBUG: [logger.js:246:9] searchStatement -> name like '%21%' or age like '%undefined%'
+2023-02-11 14:51:59.221 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name like '%21%' or age like '%undefined%'
+2023-02-11 14:51:59.222 - DEBUG: [logger.js:246:9] searchStatement -> name like '%21%' or age like '%undefined%'
+2023-02-11 14:51:59.224 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name like '%21%' or age like '%undefined%' order by name DESC limit 0, 10
+2023-02-11 14:52:09.293 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:52:09.294 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:52:09.295 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"길","searchJoin":"or","searchLike":"true","order":"name","orderDirection":"DESC"}
+2023-02-11 14:52:09.296 - DEBUG: [logger.js:246:9] searchStatement -> name like '%길%' or age like '%undefined%'
+2023-02-11 14:52:09.298 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name like '%길%' or age like '%undefined%'
+2023-02-11 14:52:09.299 - DEBUG: [logger.js:246:9] searchStatement -> name like '%길%' or age like '%undefined%'
+2023-02-11 14:52:09.301 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name like '%길%' or age like '%undefined%' order by name DESC limit 0, 10
+2023-02-11 14:55:50.755 - INFO: [logger.js:246:9] service loader called.
+2023-02-11 14:55:50.773 - INFO: [logger.js:246:9] controller loader called.
+2023-02-11 14:55:50.774 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-11 14:55:50.775 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-11 14:55:50.954 - INFO: [logger.js:246:9] Http Server started.
+2023-02-11 14:55:50.955 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-11 14:55:50.955 - INFO: [logger.js:246:9] Namespace -> ::_8001_10004
+2023-02-11 14:55:50.959 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-11 14:56:32.065 - INFO: [logger.js:246:9] service loader called.
+2023-02-11 14:56:32.090 - INFO: [logger.js:246:9] controller loader called.
+2023-02-11 14:56:32.091 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-11 14:56:32.092 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-11 14:56:32.282 - INFO: [logger.js:246:9] Http Server started.
+2023-02-11 14:56:32.282 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-11 14:56:32.283 - INFO: [logger.js:246:9] Namespace -> ::_8001_11412
+2023-02-11 14:56:32.286 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-11 14:57:10.152 - INFO: [logger.js:246:9] service loader called.
+2023-02-11 14:57:10.167 - INFO: [logger.js:246:9] controller loader called.
+2023-02-11 14:57:10.168 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-11 14:57:10.168 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-11 14:57:10.361 - INFO: [logger.js:246:9] Http Server started.
+2023-02-11 14:57:10.362 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-11 14:57:10.363 - INFO: [logger.js:246:9] Namespace -> ::_8001_8888
+2023-02-11 14:57:10.366 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-11 14:57:16.698 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-11 14:57:16.699 - DEBUG: [logger.js:246:9] POST /student/list requested
+2023-02-11 14:57:16.700 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001","page":"1","perPage":"10","search":"name,age","searchValue":"길","searchJoin":"or","searchLike":"true","order":"name","orderDirection":"DESC"}
+2023-02-11 14:57:16.701 - DEBUG: [logger.js:246:9] searchStatement -> name like '%길%' or age like '%undefined%'
+2023-02-11 14:57:16.804 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student where name like '%길%' or age like '%undefined%'
+2023-02-11 14:57:16.809 - DEBUG: [logger.js:246:9] searchStatement -> name like '%길%' or age like '%undefined%'
+2023-02-11 14:57:16.825 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student where name like '%길%' or age like '%undefined%' order by name DESC limit 0, 10
+2023-02-11 14:58:17.628 - DEBUG: [logger.js:246:9] studentInsert 요청됨.
+2023-02-11 14:58:17.629 - DEBUG: [logger.js:246:9] POST /student/insert requested
+2023-02-11 14:58:17.630 - DEBUG: [logger.js:246:9] PARAMS -> {"name":"홍길동2","age":"22","mobile":"01020002000"}
+2023-02-11 14:59:33.032 - INFO: [logger.js:246:9] service loader called.
+2023-02-11 14:59:33.049 - INFO: [logger.js:246:9] controller loader called.
+2023-02-11 14:59:33.050 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-11 14:59:33.050 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-11 14:59:33.254 - INFO: [logger.js:246:9] Http Server started.
+2023-02-11 14:59:33.254 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-11 14:59:33.255 - INFO: [logger.js:246:9] Namespace -> ::_8001_8616
+2023-02-11 14:59:33.259 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-11 14:59:45.722 - INFO: [logger.js:246:9] service loader called.
+2023-02-11 14:59:45.746 - INFO: [logger.js:246:9] controller loader called.
+2023-02-11 14:59:45.747 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-11 14:59:45.748 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-11 14:59:45.955 - INFO: [logger.js:246:9] Http Server started.
+2023-02-11 14:59:45.956 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-11 14:59:45.957 - INFO: [logger.js:246:9] Namespace -> ::_8001_10556
+2023-02-11 14:59:45.960 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-11 14:59:48.224 - DEBUG: [logger.js:246:9] studentInsert 요청됨.
+2023-02-11 14:59:48.226 - DEBUG: [logger.js:246:9] POST /student/insert requested
+2023-02-11 14:59:48.227 - DEBUG: [logger.js:246:9] PARAMS -> {"name":"홍길동2","age":"22","mobile":"01020002000"}
+2023-02-11 14:59:48.258 - DEBUG: [logger.js:246:9] SQL -> insert into test.student
+            (name, age, mobile) 
+          values
+            ('홍길동2', '22', '01020002000')
