@@ -7,7 +7,7 @@ const studentSql = require(`../database/sql/student_sql`);
 /**
  * @Controller(path="/student")
  */
-class Student {
+class StudentController {
   constructor() {
     this.database = new Database(`database_mysql`);
   }
@@ -27,7 +27,7 @@ class Student {
       };
       let rows = await this.database.query(queryParam);
       const total = rows[0].total;
-      // SQL문 실행
+      // SQL 문 실행
       sql = param.getSql(studentSql.student_list, params);
       queryParam = {
         sql: sql,
@@ -51,8 +51,10 @@ class Student {
         body: rows,
       };
       util.sendRes(res, 200, `OK`, output);
+      logger.debug(`studentList -> ${JSON.stringify(output)}`);
     } catch (err) {
       util.sendError(res, 400, `Error : ${err}`);
+      logger.error(`Error in StudentController:studentList -> ${err}`);
     }
   }
 
@@ -79,10 +81,12 @@ class Student {
         body: rows,
       };
       util.sendRes(res, 200, `OK`, output);
+      logger.debug(`studentInsert -> ${JSON.stringify(output)}`);
     } catch (err) {
       util.sendError(res, 400, `Error : ${err}`);
+      logger.error(`Error in StudentController:studentInsert -> ${err}`);
     }
   }
 }
 
-module.exports = Student;
+module.exports = StudentController;

@@ -1,0 +1,52 @@
+2023-02-13 08:54:40.539 - INFO: [logger.js:246:9] service loader called.
+2023-02-13 08:54:40.560 - INFO: [logger.js:246:9] controller loader called.
+2023-02-13 08:54:40.561 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-13 08:54:40.562 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-13 08:54:40.809 - INFO: [logger.js:246:9] Http Server started.
+2023-02-13 08:54:40.810 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-13 08:54:40.812 - INFO: [logger.js:246:9] Namespace -> ::_8001_12700
+2023-02-13 08:54:40.817 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-13 09:47:02.342 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-13 09:47:02.347 - DEBUG: [logger.js:246:9] GET /student/list requested
+2023-02-13 09:47:02.348 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-13 09:47:02.402 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-13 09:47:02.406 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student
+2023-02-13 09:48:20.520 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-13 09:48:20.521 - DEBUG: [logger.js:246:9] GET /student/list requested
+2023-02-13 09:48:20.522 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-13 09:48:20.526 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-13 09:48:20.529 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student
+2023-02-13 09:48:25.302 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-13 09:48:25.304 - DEBUG: [logger.js:246:9] GET /student/list requested
+2023-02-13 09:48:25.305 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-13 09:48:25.309 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-13 09:48:25.319 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student
+2023-02-13 09:59:22.600 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-13 09:59:22.602 - DEBUG: [logger.js:246:9] GET /student/list requested
+2023-02-13 09:59:22.603 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-13 09:59:22.606 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-13 09:59:22.609 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student
+2023-02-13 10:23:42.673 - INFO: [logger.js:246:9] service loader called.
+2023-02-13 10:23:42.707 - INFO: [logger.js:246:9] controller loader called.
+2023-02-13 10:23:42.709 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-13 10:23:42.713 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-13 10:23:43.220 - INFO: [logger.js:246:9] Http Server started.
+2023-02-13 10:23:43.221 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-13 10:23:43.222 - INFO: [logger.js:246:9] Namespace -> ::_8001_11176
+2023-02-13 10:23:43.230 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-13 10:23:46.214 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-13 10:23:46.217 - DEBUG: [logger.js:246:9] GET /student/list requested
+2023-02-13 10:23:46.218 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-13 10:23:46.263 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-13 10:23:46.267 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student
+2023-02-13 10:23:46.268 - DEBUG: [logger.js:246:9] studentList -> {"header":{"total":3},"body":[{"id":1,"name":"홍길동1","age":21,"mobile":"01010001000"},{"id":2,"name":"홍길동2","age":22,"mobile":"01020002000"},{"id":3,"name":"홍길동3","age":23,"mobile":"01030003000"}]}
