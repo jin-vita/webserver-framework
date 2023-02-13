@@ -27,7 +27,7 @@ class Student {
       };
       let rows = await this.database.query(queryParam);
       const total = rows[0].total;
-      // SQL문 실행!
+      // SQL문 실행
       sql = param.getSql(studentSql.student_list, params);
       queryParam = {
         sql: sql,
