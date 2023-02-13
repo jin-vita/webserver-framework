@@ -50,3 +50,52 @@
 2023-02-13 10:23:46.267 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
           from test.student
 2023-02-13 10:23:46.268 - DEBUG: [logger.js:246:9] studentList -> {"header":{"total":3},"body":[{"id":1,"name":"홍길동1","age":21,"mobile":"01010001000"},{"id":2,"name":"홍길동2","age":22,"mobile":"01020002000"},{"id":3,"name":"홍길동3","age":23,"mobile":"01030003000"}]}
+2023-02-13 20:53:02.183 - INFO: [logger.js:246:9] service loader called.
+2023-02-13 20:53:02.191 - INFO: [logger.js:246:9] controller loader called.
+2023-02-13 20:53:02.191 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-13 20:53:02.192 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-13 20:53:02.314 - INFO: [logger.js:246:9] Http Server started.
+2023-02-13 20:53:02.315 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-13 20:53:02.315 - INFO: [logger.js:246:9] Namespace -> ::_8001_13072
+2023-02-13 20:53:02.317 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-13 20:53:16.969 - DEBUG: [logger.js:246:9] studentList 요청됨.
+2023-02-13 20:53:16.970 - DEBUG: [logger.js:246:9] GET /student/list requested
+2023-02-13 20:53:16.973 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-13 20:53:16.988 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-13 20:53:16.989 - DEBUG: [logger.js:246:9] SQL -> select id, name, age, mobile
+          from test.student
+2023-02-13 20:53:16.992 - DEBUG: [logger.js:246:9] studentList -> {"header":{"total":1},"body":[{"id":1,"name":"Tom1","age":21,"mobile":"01010001000"}]}
+2023-02-13 22:21:38.156 - INFO: [logger.js:246:9] service loader called.
+2023-02-13 22:21:38.164 - INFO: [logger.js:246:9] controller loader called.
+2023-02-13 22:21:38.165 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-13 22:21:38.165 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-13 22:21:38.316 - INFO: [logger.js:246:9] Http Server started.
+2023-02-13 22:21:38.317 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-13 22:21:38.317 - INFO: [logger.js:246:9] Namespace -> ::_8001_1828
+2023-02-13 22:21:38.319 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-13 22:21:58.140 - DEBUG: [logger.js:246:9] userList 요청됨.
+2023-02-13 22:21:58.141 - DEBUG: [logger.js:246:9] GET /user/list requested
+2023-02-13 22:21:58.141 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-13 22:21:58.154 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-13 22:21:58.155 - DEBUG: [logger.js:246:9] SQL -> select *
+          from test.user
+2023-02-13 22:21:58.158 - DEBUG: [logger.js:246:9] userList -> {"header":{"total":0},"body":[{"id":"test01","password":"test01","age":21,"email":"test@test.test","mobile":"01010001000","create_date":"2023-02-13T13:11:38.000Z","modify_date":"2023-02-13T13:12:17.000Z"}]}
+2023-02-13 22:25:27.367 - DEBUG: [logger.js:246:9] userInsert 요청됨.
+2023-02-13 22:25:27.367 - DEBUG: [logger.js:246:9] GET /user/insert requested
+2023-02-13 22:25:27.368 - DEBUG: [logger.js:246:9] PARAMS -> {"id":"test02","password":"test02","age":"22","email":"test02@test.test","mobile":"10120002000"}
+2023-02-13 22:25:27.369 - DEBUG: [logger.js:246:9] SQL -> insert into test.user
+            (id, name, age, mobile, email, create_date, modify_date) 
+          values
+            ('test02', :NAME, '22', '10120002000', 'test02@test.test', now(), now())
+2023-02-13 22:25:27.369 - DEBUG: [logger.js:246:9] Error in executing SQL -> Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':NAME, '22', '10120002000', 'test02@test.test', now(), now())' at line 4
+2023-02-13 22:25:27.370 - ERROR: [logger.js:246:9] Error in UserController:userInsert -> Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':NAME, '22', '10120002000', 'test02@test.test', now(), now())' at line 4
+2023-02-13 22:27:31.396 - DEBUG: [logger.js:246:9] userList 요청됨.
+2023-02-13 22:27:31.397 - DEBUG: [logger.js:246:9] GET /user/list requested
+2023-02-13 22:27:31.397 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-13 22:27:31.398 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-13 22:27:31.399 - DEBUG: [logger.js:246:9] SQL -> select *
+          from test.user
+2023-02-13 22:27:31.400 - DEBUG: [logger.js:246:9] userList -> {"header":{"total":0},"body":[{"id":"test01","password":"test01","name":"Tom01","age":21,"mobile":"01010001000","email":"test01@test.test","create_date":"2023-02-13T13:11:38.000Z","modify_date":"2023-02-13T13:12:17.000Z"}]}
