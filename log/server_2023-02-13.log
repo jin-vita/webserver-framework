@@ -99,3 +99,27 @@
 2023-02-13 22:27:31.399 - DEBUG: [logger.js:246:9] SQL -> select *
           from test.user
 2023-02-13 22:27:31.400 - DEBUG: [logger.js:246:9] userList -> {"header":{"total":0},"body":[{"id":"test01","password":"test01","name":"Tom01","age":21,"mobile":"01010001000","email":"test01@test.test","create_date":"2023-02-13T13:11:38.000Z","modify_date":"2023-02-13T13:12:17.000Z"}]}
+2023-02-13 22:28:46.715 - INFO: [logger.js:246:9] service loader called.
+2023-02-13 22:28:46.722 - INFO: [logger.js:246:9] controller loader called.
+2023-02-13 22:28:46.722 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-13 22:28:46.723 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-13 22:28:46.837 - INFO: [logger.js:246:9] Http Server started.
+2023-02-13 22:28:46.838 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-13 22:28:46.838 - INFO: [logger.js:246:9] Namespace -> ::_8001_11744
+2023-02-13 22:28:46.840 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-13 22:29:18.872 - DEBUG: [logger.js:246:9] userInsert 요청됨.
+2023-02-13 22:29:18.873 - DEBUG: [logger.js:246:9] GET /user/insert requested
+2023-02-13 22:29:18.873 - DEBUG: [logger.js:246:9] PARAMS -> {"id":"test02","password":"test02","name":"Tom02","age":"22","email":"test02@test.test","mobile":"10120002000"}
+2023-02-13 22:29:18.887 - DEBUG: [logger.js:246:9] SQL -> insert into test.user
+            (id, password, name, age, mobile, email, create_date, modify_date) 
+          values
+            ('test02', 'test02', 'Tom02', '22', '10120002000', 'test02@test.test', now(), now())
+2023-02-13 22:29:18.890 - DEBUG: [logger.js:246:9] userInsert -> {"header":{},"body":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"","protocol41":true,"changedRows":0}}
+2023-02-13 22:30:00.904 - DEBUG: [logger.js:246:9] userList 요청됨.
+2023-02-13 22:30:00.905 - DEBUG: [logger.js:246:9] GET /user/list requested
+2023-02-13 22:30:00.905 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-13 22:30:00.907 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-13 22:30:00.908 - DEBUG: [logger.js:246:9] SQL -> select *
+          from test.user
+2023-02-13 22:30:00.908 - DEBUG: [logger.js:246:9] userList -> {"header":{"total":0},"body":[{"id":"test01","password":"test01","name":"Tom01","age":21,"mobile":"01010001000","email":"test01@test.test","create_date":"2023-02-13T13:11:38.000Z","modify_date":"2023-02-13T13:12:17.000Z"},{"id":"test02","password":"test02","name":"Tom02","age":22,"mobile":"10120002000","email":"test02@test.test","create_date":"2023-02-13T13:29:18.000Z","modify_date":"2023-02-13T13:29:18.000Z"}]}

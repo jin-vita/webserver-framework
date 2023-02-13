@@ -1,0 +1,57 @@
+2023-02-14 06:44:59.214 - INFO: [logger.js:246:9] service loader called.
+2023-02-14 06:44:59.221 - INFO: [logger.js:246:9] controller loader called.
+2023-02-14 06:44:59.221 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-14 06:44:59.222 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-14 06:44:59.368 - INFO: [logger.js:246:9] Http Server started.
+2023-02-14 06:44:59.368 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-14 06:44:59.369 - INFO: [logger.js:246:9] Namespace -> ::_8001_1508
+2023-02-14 06:44:59.371 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-14 06:45:01.517 - DEBUG: [logger.js:246:9] userList 요청됨.
+2023-02-14 06:45:01.518 - DEBUG: [logger.js:246:9] POST /user/list requested
+2023-02-14 06:45:01.519 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-14 06:45:01.561 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-14 06:45:01.566 - DEBUG: [logger.js:246:9] SQL -> select *
+          from test.user
+2023-02-14 06:45:01.568 - DEBUG: [logger.js:246:9] userList -> {"header":{"total":0},"body":[{"id":"test01","password":"test01","name":"Tom01","age":21,"mobile":"01010001000","email":"test01@test.test","create_date":"2023-02-13T13:11:38.000Z","modify_date":"2023-02-13T13:12:17.000Z"},{"id":"test02","password":"test02","name":"Tom02","age":22,"mobile":"10120002000","email":"test02@test.test","create_date":"2023-02-13T13:29:18.000Z","modify_date":"2023-02-13T13:29:18.000Z"}]}
+2023-02-14 06:45:44.975 - DEBUG: [logger.js:246:9] userList 요청됨.
+2023-02-14 06:45:44.975 - DEBUG: [logger.js:246:9] POST /user/list requested
+2023-02-14 06:45:44.975 - DEBUG: [logger.js:246:9] PARAMS -> {}
+2023-02-14 06:45:44.976 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-14 06:45:44.977 - DEBUG: [logger.js:246:9] SQL -> select *
+          from test.user
+2023-02-14 06:45:44.978 - DEBUG: [logger.js:246:9] userList -> {"header":{"total":0},"body":[{"id":"test01","password":"test01","name":"Tom01","age":21,"mobile":"01010001000","email":"test01@test.test","create_date":"2023-02-13T13:11:38.000Z","modify_date":"2023-02-13T13:12:17.000Z"},{"id":"test02","password":"test02","name":"Tom02","age":22,"mobile":"10120002000","email":"test02@test.test","create_date":"2023-02-13T13:29:18.000Z","modify_date":"2023-02-13T13:29:18.000Z"}]}
+2023-02-14 06:45:59.184 - DEBUG: [logger.js:246:9] userList 요청됨.
+2023-02-14 06:45:59.185 - DEBUG: [logger.js:246:9] POST /user/list requested
+2023-02-14 06:45:59.185 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001"}
+2023-02-14 06:45:59.186 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-14 06:45:59.187 - DEBUG: [logger.js:246:9] SQL -> select *
+          from test.user
+2023-02-14 06:45:59.187 - DEBUG: [logger.js:246:9] userList -> {"header":{"requestCode":"1001","total":0},"body":[{"id":"test01","password":"test01","name":"Tom01","age":21,"mobile":"01010001000","email":"test01@test.test","create_date":"2023-02-13T13:11:38.000Z","modify_date":"2023-02-13T13:12:17.000Z"},{"id":"test02","password":"test02","name":"Tom02","age":22,"mobile":"10120002000","email":"test02@test.test","create_date":"2023-02-13T13:29:18.000Z","modify_date":"2023-02-13T13:29:18.000Z"}]}
+2023-02-14 06:47:35.572 - DEBUG: [logger.js:246:9] userInsert 요청됨.
+2023-02-14 06:47:35.572 - DEBUG: [logger.js:246:9] POST /user/insert requested
+2023-02-14 06:47:35.573 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1002","id":"test03","password":"test03","name":"Tom03","age":"23","email":"test03@test.test"}
+2023-02-14 06:47:35.574 - DEBUG: [logger.js:246:9] SQL -> insert into test.user
+            (id, password, name, age, mobile, email, create_date, modify_date) 
+          values
+            ('test03', 'test03', 'Tom03', '23', :MOBILE, 'test03@test.test', now(), now())
+2023-02-14 06:47:35.575 - DEBUG: [logger.js:246:9] Error in executing SQL -> Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':MOBILE, 'test03@test.test', now(), now())' at line 4
+2023-02-14 06:47:35.576 - ERROR: [logger.js:246:9] Error in UserController:userInsert -> Error: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ':MOBILE, 'test03@test.test', now(), now())' at line 4
+2023-02-14 06:48:05.149 - DEBUG: [logger.js:246:9] userInsert 요청됨.
+2023-02-14 06:48:05.149 - DEBUG: [logger.js:246:9] POST /user/insert requested
+2023-02-14 06:48:05.149 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1002","id":"test03","password":"test03","name":"Tom03","age":"23","mobile":"01030003000","email":"test03@test.test"}
+2023-02-14 06:48:05.153 - DEBUG: [logger.js:246:9] SQL -> insert into test.user
+            (id, password, name, age, mobile, email, create_date, modify_date) 
+          values
+            ('test03', 'test03', 'Tom03', '23', '01030003000', 'test03@test.test', now(), now())
+2023-02-14 06:48:05.154 - DEBUG: [logger.js:246:9] userInsert -> {"header":{"requestCode":"1002"},"body":{"fieldCount":0,"affectedRows":1,"insertId":0,"serverStatus":2,"warningCount":0,"message":"","protocol41":true,"changedRows":0}}
+2023-02-14 07:26:27.584 - DEBUG: [logger.js:246:9] userList 요청됨.
+2023-02-14 07:26:27.585 - DEBUG: [logger.js:246:9] POST /user/list requested
+2023-02-14 07:26:27.585 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001"}
+2023-02-14 07:26:27.586 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+            from test.student
+2023-02-14 07:26:27.587 - DEBUG: [logger.js:246:9] SQL -> select *
+          from test.user
+2023-02-14 07:26:27.588 - DEBUG: [logger.js:246:9] userList -> {"header":{"requestCode":"1001","total":0},"body":[{"id":"test01","password":"test01","name":"Tom01","age":21,"mobile":"01010001000","email":"test01@test.test","create_date":"2023-02-13T13:11:38.000Z","modify_date":"2023-02-13T13:12:17.000Z"},{"id":"test02","password":"test02","name":"Tom02","age":22,"mobile":"10120002000","email":"test02@test.test","create_date":"2023-02-13T13:29:18.000Z","modify_date":"2023-02-13T13:29:18.000Z"},{"id":"test03","password":"test03","name":"Tom03","age":23,"mobile":"01030003000","email":"test03@test.test","create_date":"2023-02-13T21:48:05.000Z","modify_date":"2023-02-13T21:48:05.000Z"}]}

@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "a3a76a81-aa72-4c0f-abd6-cad4179e4330",
+		"name": "USER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25835873"
+	},
+	"item": [
+		{
+			"name": "LIST USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "requestCode",
+							"value": "1001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/user/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"user",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "INSERT USER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "requestCode",
+							"value": "1002",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "test03",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test03",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Tom03",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "23",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "01030003000",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test03@test.test",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/user/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"user",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
