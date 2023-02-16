@@ -55,3 +55,26 @@
 2023-02-14 07:26:27.587 - DEBUG: [logger.js:246:9] SQL -> select *
           from test.user
 2023-02-14 07:26:27.588 - DEBUG: [logger.js:246:9] userList -> {"header":{"requestCode":"1001","total":0},"body":[{"id":"test01","password":"test01","name":"Tom01","age":21,"mobile":"01010001000","email":"test01@test.test","create_date":"2023-02-13T13:11:38.000Z","modify_date":"2023-02-13T13:12:17.000Z"},{"id":"test02","password":"test02","name":"Tom02","age":22,"mobile":"10120002000","email":"test02@test.test","create_date":"2023-02-13T13:29:18.000Z","modify_date":"2023-02-13T13:29:18.000Z"},{"id":"test03","password":"test03","name":"Tom03","age":23,"mobile":"01030003000","email":"test03@test.test","create_date":"2023-02-13T21:48:05.000Z","modify_date":"2023-02-13T21:48:05.000Z"}]}
+2023-02-14 11:39:09.287 - INFO: [logger.js:246:9] service loader called.
+2023-02-14 11:39:09.306 - INFO: [logger.js:246:9] controller loader called.
+2023-02-14 11:39:09.307 - DEBUG: [logger.js:246:9] external_loader called.
+2023-02-14 11:39:09.308 - DEBUG: [logger.js:246:9] No external configuration.
+2023-02-14 11:39:09.604 - INFO: [logger.js:246:9] Http Server started.
+2023-02-14 11:39:09.604 - INFO: [logger.js:246:9] Base URL -> http://localhost:8001
+2023-02-14 11:39:09.605 - INFO: [logger.js:246:9] Namespace -> ::_8001_13228
+2023-02-14 11:39:09.610 - DEBUG: [logger.js:246:9] database SQL file loaded.
+2023-02-14 11:39:14.302 - DEBUG: [logger.js:246:9] userList 요청됨.
+2023-02-14 11:39:14.303 - DEBUG: [logger.js:246:9] POST /user/list requested
+2023-02-14 11:39:14.303 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1001"}
+2023-02-14 11:39:14.331 - DEBUG: [logger.js:246:9] SQL -> select count(*) as total
+                from test.student
+2023-02-14 11:39:14.334 - DEBUG: [logger.js:246:9] SQL -> select *
+              from test.user
+2023-02-14 11:39:14.338 - DEBUG: [logger.js:246:9] userList -> {"header":{"requestCode":"1001","total":3},"body":[{"id":1,"email":"test01@test.test","password":"test01","name":"tom1","age":21,"mobile":"01010001000","create_date":"2023-02-14T02:13:02.000Z","modify_date":"2023-02-14T02:13:04.000Z"}]}
+2023-02-14 11:39:47.388 - DEBUG: [logger.js:246:9] userInsert 요청됨.
+2023-02-14 11:39:47.389 - DEBUG: [logger.js:246:9] POST /user/insert requested
+2023-02-14 11:39:47.390 - DEBUG: [logger.js:246:9] PARAMS -> {"requestCode":"1002","mobile":"01020002000","password":"test02","name":"Tom2","age":"22","email":"test02@test.test"}
+2023-02-14 11:39:47.398 - DEBUG: [logger.js:246:9] SQL -> insert into test.user
+                  (email, password, name, age, mobile, create_date, modify_date)
+              values ('test02@test.test', 'test02', 'Tom2', '22', '01020002000', now(), now())
+2023-02-14 11:39:47.399 - DEBUG: [logger.js:246:9] userInsert -> {"header":{"requestCode":"1002"},"body":{"fieldCount":0,"affectedRows":1,"insertId":2,"serverStatus":2,"warningCount":0,"message":"","protocol41":true,"changedRows":0}}
